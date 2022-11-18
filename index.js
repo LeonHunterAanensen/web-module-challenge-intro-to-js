@@ -248,7 +248,8 @@ Using the miles function below do the following:
 
 function miles(KM){
   let M = KM * 0.62137
-  return console.log(M);
+  console.log(M);
+  return M
   }
   miles()
 

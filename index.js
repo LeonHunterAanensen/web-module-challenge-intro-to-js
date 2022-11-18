@@ -264,7 +264,8 @@ Using the feet function below do the following:
 
 function feet(CM){
   let F = CM * 0.0328
-  return console.log(F);
+  console.log(F);
+  return F
   }
   feet()
 
@@ -285,7 +286,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(X){
- return console.log((X),"bottles of soda on the wall,",(X),"bottles of soda, take one down pass it around ",(X-1),"bottles of soda on the wall",);
+ console.log((X),"bottles of soda on the wall,",(X),"bottles of soda, take one down pass it around ",(X-1),"bottles of soda on the wall");
+  return (X),"bottles of soda on the wall,",(X),"bottles of soda, take one down pass it around ",(X-1),"bottles of soda on the wall"
   }
   annoyingSong(5)
 

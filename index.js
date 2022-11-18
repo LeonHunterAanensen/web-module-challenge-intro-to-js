@@ -247,11 +247,11 @@ Using the miles function below do the following:
 */
 
 function miles(KM){
-  let M = KM * 0.62137
+  let M = KM * 0.621371
   console.log(M);
-  return M
+  return M;
   }
-  miles()
+  miles(20)
 
 
 //Task 5b - Centimeters to Feet

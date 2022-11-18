@@ -21,7 +21,7 @@ Do the following:
 */
 let Age =(19);
 let VA =(18);
-if(Age==>VA){
+if(Age=>VA){
   console.log('true');
 } else if(votingAge<VA) {
   console.log('false')
@@ -161,7 +161,7 @@ function hungryDog(weight,Age){
         return weight * 0.02
       }
       }
-    function newDog(){
+     function newDog(){
         if(Age<=0.33){
         return weight * 0.10
       } else if(Age<=0.58) {

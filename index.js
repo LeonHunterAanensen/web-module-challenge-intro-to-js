@@ -203,52 +203,36 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  let rock = ('rock')
-  let paper= 2
-  let scissors = 3
-  if(user==1){
-  console.log("rock")
-} else if(user==2) {
-  console.log("paper")
+computer = Math.random();
+console.log(computer);
+if(computer<=0.34){
+computer = 'rock';
+console.log(computer)
+} else if(computer<=0.67) {
+computer = 'paper';
+console.log(computer)
+} else if(computer>0.67) {
+computer = 'scissors';
+console.log(computer)
 } else {
-  console.log("scissors")
+console.log('bugreport');
 }
-  let X = Math.random();
-  console.log(X);
-if(X<0.33){
-  console.log("rock");
-  let computer = rock;
-  if(user==1){
-    return console.log("it's a tie");
-  }  else if(user==2) {
-    return console.log("you win!")
+console.log(user);
+ if(user === computer){
+    return "it's a tie";
+} else if(user === 'rock' && computer === 'scissors') {  //rock
+    return "you win!";
+} else if(user === 'paper' && computer === 'rock') {     //paper
+    return "you win!";
+} else if(user === 'scissors' && computer === 'paper') {  //scissors
+   return "you win!";
 } else {
-    return console.log("you lose!")
-}
-} else if(X<0.66) {
-  console.log("paper");
-  let computer = paper;
-  if(user==2){
-    return console.log("it's a tie");
-  }  else if(user==3) {
-    return console.log("you win!")
-} else {
-    return console.log("you lose!")
-}
-} else {
-  console.log("scissors");
-  let computer = scissors;
-  if(user==3){
-    return console.log("it's a tie");
-  }  else if(user==1) {
-    return console.log("you win!")
-} else {
-    return console.log("you lose!")
+ console.log("you lose!")
+   return "you lose!"
 }
 }
-}
-//1-3=r-p-s 
-game(1)
+game('rock')
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

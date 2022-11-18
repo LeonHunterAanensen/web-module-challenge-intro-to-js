@@ -145,34 +145,40 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 */  
 
 function hungryDog(weight,Age){
-    if(Age>=1){
+  let A = 0
+  console.log('dogfood')
+  if(Age>=1){
       oldDog(weight);
     } else {
       newDog();
     }
     function oldDog(weight){
       if(weight<=5){
-        return weight * 0.05
+        A = weight * 0.05
       } else if(weight<=10) {
-        return weight * 0.04
+        A = weight * 0.04
       } else if(weight<=15) {
-        return weight * 0.03
+        A = weight * 0.03
       } else {
-        return weight * 0.02
-      }
-      }
-     function newDog(){
-        if(Age<=0.33){
-        return weight * 0.10
-      } else if(Age<=0.58) {
-        return weight * 0.05
-      } else {
-        return weight * 0.04
-      }
-      }
-      }
+        A = weight * 0.02
 
-hungryDog(5,1);
+      }
+      }
+    function newDog(){
+        if(Age<=0.33){
+        A = weight * 0.10
+      } else if(Age<=0.58) {
+        A = weight * 0.05
+      } else {
+        A = weight * 0.04
+
+      }
+      }
+console.log(A);
+return A
+}
+
+hungryDog(10,5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

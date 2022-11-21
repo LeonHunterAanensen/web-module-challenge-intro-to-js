@@ -262,12 +262,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(CM){
-  let F = CM * 0.032808
+function centi(CM){
+  let F = CM * 0.0328084
   console.log(F);
   return F
   }
-  feet()
+  centi()
 
 
 
@@ -308,11 +308,31 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
-}
-
-
+function grade(G){
+  let e = "bug report"
+    if(G<60){
+  let e = 'you got an F';
+    console.log(e);
+    return e 
+  } else if(G<70) {
+  let e = 'you got a D'
+    console.log(e);
+    return e 
+  } else if(G<80) {
+  let e = 'you got a C'
+    console.log(e);
+    return e 
+  } else if(G<90) {
+  let e = 'you got a B'
+    console.log(e);
+    return e 
+  } else {
+  let e = 'you got an A' 
+    console.log(e);
+    return e 
+    }
+  }
+  grade(70)
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 

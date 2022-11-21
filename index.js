@@ -262,12 +262,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function centi(CM){
+function feet(CM){
   let F = CM * 0.0328084
   console.log(F);
   return F
   }
-  centi()
+  feet()
 
 
 

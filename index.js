@@ -285,9 +285,10 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(X){
- console.log((X),"bottles of soda on the wall,",(X),"bottles of soda, take one down pass it around ",(X-1),"bottles of soda on the wall");
-  return (X),"bottles of soda on the wall,",(X),"bottles of soda, take one down pass it around ",(X-1),"bottles of soda on the wall"
+function annoyingSong(num){
+    for(let i = num; i>0; i--){
+      return '${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall';
+    }
   }
   annoyingSong(5)
 

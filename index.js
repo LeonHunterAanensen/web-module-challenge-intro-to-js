@@ -202,7 +202,7 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-computer = Math.random();
+
 function game(user, computer){
 if(computer<=0.34){
 computer = 'rock';
@@ -229,8 +229,8 @@ console.log(user);
    return "you lose!"
 }
 }
+computer = Math.random();
 console.log(game("paper", computer))
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 

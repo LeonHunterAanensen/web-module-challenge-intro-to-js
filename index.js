@@ -229,7 +229,7 @@ console.log(user);
    return "you lose!"
 }
 }
-computer = Math.random();
+let computer = Math.random();
 console.log(game("paper", computer))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/

@@ -202,9 +202,8 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
 computer = Math.random();
-console.log(computer);
+function game(user, computer){
 if(computer<=0.34){
 computer = 'rock';
 console.log(computer)
@@ -215,7 +214,7 @@ console.log(computer)
 computer = 'scissors';
 console.log(computer)
 } else {
-console.log('bugreport');
+console.log('something went wrong');
 }
 console.log(user);
  if(user === computer){
@@ -227,12 +226,10 @@ console.log(user);
 } else if(user === 'scissors' && computer === 'paper') {  //scissors
    return "you win!";
 } else {
- console.log("you lose!")
    return "you lose!"
 }
 }
-game('rock')
-
+console.log(game("paper", computer))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -248,10 +245,9 @@ Using the miles function below do the following:
 
 function miles(KM){
   let M = KM * 0.621371
-  console.log(M);
   return M;
   }
-  miles(20)
+  miles()
 
 
 //Task 5b - Centimeters to Feet
@@ -264,7 +260,6 @@ Using the feet function below do the following:
 
 function feet(CM){
   let F = CM * 0.0328084
-  console.log(F);
   return F
   }
   feet()

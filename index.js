@@ -259,7 +259,7 @@ Using the feet function below do the following:
 */
 
 function feet(CM){
-  let F = CM * 0.03280840
+  let F = CM/30.48
   return F
   }
   feet()
